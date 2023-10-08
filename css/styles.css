@@ -13,6 +13,7 @@
 }
 
 .header {
+  border-bottom: 1px solid var(--accent-color);
   background-color: var(--white-background-color);
 }
 
@@ -20,7 +21,7 @@
   background-color: var(--hero-background-color);
 }
 
-.footer > .paragraph {
+.footer .paragraph {
   color: var(--light-color);
 }
 
@@ -194,4 +195,68 @@
 
 .logo-span-two {
   color: var(--light-color);
+}
+
+.container {
+  width: 1158px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: 120px;
+}
+
+.header-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-navigation {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.address-list {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.solutions-layout .list {
+  display: flex;
+}
+
+.products-layout .list {
+  display: flex;
+}
+
+.team-layout .list {
+  display: flex;
+}
+
+.portfolio-layout .button-list {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-layout .cards-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
