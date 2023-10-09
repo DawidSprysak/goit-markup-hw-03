@@ -19,14 +19,25 @@
 
 .footer {
   background-color: var(--hero-background-color);
+  padding-block: 100px;
 }
 
 .footer .paragraph {
   color: var(--light-color);
+  max-width: 264px;
 }
 
 .heading {
   background-color: var(--hero-background-color);
+  padding-block: 188px;
+}
+
+.heading .button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 .main-heading {
@@ -36,6 +47,7 @@
   line-height: 1.07em;
   letter-spacing: 0.02em;
   text-align: center;
+  max-width: 496px;
 }
 
 .solutions {
@@ -52,6 +64,8 @@
 
 .team-member {
   background-color: var(--white-background-color);
+  flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .secondary-heading {
@@ -62,6 +76,7 @@
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .tertiary-heading {
@@ -70,6 +85,9 @@
   font-weight: 500;
   line-height: 1.2em;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .paragraph {
@@ -81,6 +99,7 @@
 
 .portfolio {
   background-color: var(--white-background-color);
+  padding: 96px 0 120px 0;
 }
 
 .link {
@@ -125,16 +144,22 @@
   line-height: 1.5em;
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding-block: 12px;
+  padding-inline: 24px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
 }
 
 .p-button:hover {
   color: var(--white-background-color);
   background-color: var(--pressed-state-color);
+  border: 1px solid transparent;
 }
 
 .p-button:focus {
   color: var(--white-background-color);
   background-color: var(--pressed-state-color);
+  border: 1px solid transparent;
 }
 
 .address {
@@ -187,6 +212,9 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
+  margin-right: 76px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-span {
@@ -215,37 +243,62 @@
 }
 
 .page-navigation {
-  display: inline-flex;
+  display: flex;
   align-items: flex-start;
   gap: 40px;
 }
 
+.page-navigation .link {
+  padding-block: 24px;
+}
+
 .address-list {
-  display: inline-flex;
+  display: flex;
   align-items: flex-start;
   gap: 40px;
 }
 
 .solutions-layout .list {
   display: flex;
+  gap: 24px;
 }
 
 .products-layout .list {
   display: flex;
+  gap: 24px;
 }
 
 .team-layout .list {
   display: flex;
+  gap: 24px;
 }
 
 .portfolio-layout .button-list {
   display: flex;
   justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
 
 .portfolio-layout .cards-list {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.cards-list .card {
+  width: calc((100% - 48px) / 3);
+}
+
+.card .a-card {
+  padding: 32px 16px;
+  border: 1px solid var(--accent-color);
+  border-top: none;
+}
+
+.card .a-card > .paragraph {
+  text-align: center;
 }
 
 .visually-hidden {
@@ -259,4 +312,30 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+img {
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.solution {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.product {
+  flex-basis: calc((100% - 3 * 16px) / 3);
+}
+
+.team-member .t-member > .paragraph {
+  text-align: center;
+}
+
+.t-member {
+  padding-block: 32px;
+  padding-inline: 16px;
 }
